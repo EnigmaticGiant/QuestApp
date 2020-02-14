@@ -48,8 +48,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\titus\Downloads\ic_menu_home\res\drawable-xxxhdpi\ic_menu_home.png" />
-                                      <entry key="outputName" value="ic_menu_home" />
+                                      <entry key="imageAsset" value="C:\Users\titus\Downloads\ic_menu_friend\res\drawable-xxxhdpi\ic_menu_friend.png" />
+                                      <entry key="outputName" value="ic_menu_friend" />
                                       <entry key="theme" value="CUSTOM" />
                                       <entry key="themeColor" value="000000" />
                                     </map>
