@@ -1,28 +1,33 @@
 package com.example.questv3;
 
 public class User {
-    String name = "No name set";
-    String email = "No email set";
-    String userID = "No ID set";
+    String userId;
 
-    String getName() {
-        return this.name;
-    }
-    void setName(String newName) {
-        this.name = newName;
-    }
+    String userName;
 
-    String getMail() {
-        return this.email;
-    }
-    void setMail(String newEmail) {
-        this.email = newEmail;
+    String email;
+
+    public User(){
+
     }
 
-    String getUserID() {
-        return this.userID;
+    public User(String userId, String userName, String email){
+        this.userId = userId;
+        this.userName = userName;
+        this.email = email;
+
     }
-    void setUserID(String ID) {
-        this.userID = ID;
+
+    public String getUserId() {
+        return userId;
     }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
 }

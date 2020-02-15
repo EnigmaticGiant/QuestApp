@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -134,9 +135,9 @@ public class MainActivity extends AppCompatActivity
         TextView name, email;
         ImageView imageView;
 
-        name = findViewById(R.id.navName);
-        email = findViewById(R.id.navEmail);
-        imageView = findViewById(R.id.navImageView);
+        name = findViewById(R.id.nav_name);
+        email = findViewById(R.id.nav_email);
+        imageView = findViewById(R.id.nav_image);
 
         name.setText(mData.getUserName());
         email.setText(mData.getUserEmail());
@@ -151,9 +152,9 @@ public class MainActivity extends AppCompatActivity
         TextView name, email;
         ImageView imageView;
 
-        name = findViewById(R.id.navName);
-        email = findViewById(R.id.navEmail);
-        imageView = findViewById(R.id.navImageView);
+        name = findViewById(R.id.nav_name);
+        email = findViewById(R.id.nav_email);
+        imageView = findViewById(R.id.nav_image);
 
         name.setText("Sign In");
         email.setText("Using Google Sign In");
