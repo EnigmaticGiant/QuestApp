@@ -11,4 +11,8 @@
         android:orderInCategory="100"
         android:title="Sign Out"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sign_in"
+        android:orderInCategory="101"
+        android:title="Sign In" />
 </menu>
