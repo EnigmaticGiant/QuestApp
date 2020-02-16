@@ -15,4 +15,6 @@
     <string name="menu_send">Send</string>
     <string name="title_activity_friends_list">FriendsList</string>
     <string name="title_activity_friend">Friend</string>
+    <string name="title_activity_friends">Friends</string>
+    <string name="title_activity_friend_adapter">FriendAdapter</string>
 </resources>
