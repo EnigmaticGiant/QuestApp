@@ -21,6 +21,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.questv3.FriendAdapter"
+            android:label="@string/title_activity_friend_adapter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.questv3.Friends"
+            android:label="@string/title_activity_friends"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.example.questv3.Friend"
             android:label="@string/title_activity_friend"
             android:parentActivityName="com.example.questv3.FriendsList"
@@ -54,10 +62,6 @@
             android:parentActivityName="com.example.questv3.MainActivity" />
         <activity
             android:name="com.example.questv3.Create"
-            android:parentActivityName="com.example.questv3.MainActivity" />
-        <activity
-            android:name="com.example.questv3.SignIn"
-            android:label="Sign In"
             android:parentActivityName="com.example.questv3.MainActivity" />
         <activity
             android:name="com.example.questv3.QuestLog"
