@@ -13,8 +13,22 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="menu_log">Log</string>
+    <string name="menu_groups">Groups</string>
+    <string name="menu_friends">Friends</string>
+    <string name="menu_request">ReQuest</string>
     <string name="title_activity_friends_list">FriendsList</string>
     <string name="title_activity_friend">Friend</string>
     <string name="title_activity_friends">Friends</string>
     <string name="title_activity_friend_adapter">FriendAdapter</string>
+
+    <string-array name="Colors">
+        <item>Default</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Purple</item>
+    </string-array>
 </resources>
