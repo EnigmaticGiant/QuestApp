@@ -11,18 +11,18 @@
 9-->D:\Git\QuestApp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-11-->[com.google.firebase:firebase-database:16.0.4] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\fda927d8f03d27eb5a812ded96931fa9\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
-11-->[com.google.firebase:firebase-database:16.0.4] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\fda927d8f03d27eb5a812ded96931fa9\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
+11-->[com.google.firebase:firebase-database:16.0.4] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\fa40873fdf2ba9ecc36c328a9d0278e9\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
+11-->[com.google.firebase:firebase-database:16.0.4] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\fa40873fdf2ba9ecc36c328a9d0278e9\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->[com.google.firebase:firebase-database:16.0.4] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\fda927d8f03d27eb5a812ded96931fa9\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:5-67
-12-->[com.google.firebase:firebase-database:16.0.4] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\fda927d8f03d27eb5a812ded96931fa9\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:22-64
+12-->[com.google.firebase:firebase-database:16.0.4] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\fa40873fdf2ba9ecc36c328a9d0278e9\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:5-67
+12-->[com.google.firebase:firebase-database:16.0.4] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\fa40873fdf2ba9ecc36c328a9d0278e9\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:22-64
 13
 14    <application
 14-->D:\Git\QuestApp\app\src\main\AndroidManifest.xml:5:5-41:19
 15        android:allowBackup="true"
 15-->D:\Git\QuestApp\app\src\main\AndroidManifest.xml:6:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.1.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\e91594602c73eba9f0c6fb1745d43dba\core-1.1.0\AndroidManifest.xml:24:18-86
+16-->[androidx.core:core:1.1.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\13c5e5eb30313edb16cd523337f0b5af\core-1.1.0\AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:icon="@mipmap/ic_launcher"
 18-->D:\Git\QuestApp\app\src\main\AndroidManifest.xml:7:9-43
@@ -93,54 +93,54 @@
 52            android:parentActivityName="com.example.questv3.MainActivity" />
 52-->D:\Git\QuestApp\app\src\main\AndroidManifest.xml:40:13-55
 53        <activity
-53-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+53-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
 54            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-54-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+54-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
 55            android:excludeFromRecents="true"
-55-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+55-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
 56            android:exported="false"
-56-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+56-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
 57            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-57-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+57-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
 58        <!--
 59            Service handling Google Sign-In user revocation. For apps that do not integrate with
 60            Google Sign-In, this service will never be started.
 61        -->
 62        <service
-62-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+62-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
 63            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-63-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+63-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
 64            android:exported="true"
-64-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+64-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
 65            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-65-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\74977a2d936fd88d31518c0921483080\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+65-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\3fb2842557a911135bb76d36bbe8d413\jetified-play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
 66
 67        <activity
-67-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+67-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\341bd112b51522774ca4a3e674aef5a9\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 68            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-68-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+68-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\341bd112b51522774ca4a3e674aef5a9\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 69            android:exported="false"
-69-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+69-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\341bd112b51522774ca4a3e674aef5a9\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
 70            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-70-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\503246db64dcbb120c121745b36c75fd\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+70-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\341bd112b51522774ca4a3e674aef5a9\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 71
 72        <provider
-72-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\6101c857dbb9423e2ab132941c1c2ea6\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+72-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\2e5f64873eb7e4b250229a46e84e7190\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
 73            android:name="com.google.firebase.provider.FirebaseInitProvider"
-73-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\6101c857dbb9423e2ab132941c1c2ea6\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+73-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\2e5f64873eb7e4b250229a46e84e7190\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
 74            android:authorities="com.example.questv3.firebaseinitprovider"
-74-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\6101c857dbb9423e2ab132941c1c2ea6\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+74-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\2e5f64873eb7e4b250229a46e84e7190\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
 75            android:exported="false"
-75-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\6101c857dbb9423e2ab132941c1c2ea6\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+75-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\2e5f64873eb7e4b250229a46e84e7190\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
 76            android:initOrder="100" />
-76-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\6101c857dbb9423e2ab132941c1c2ea6\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+76-->[com.google.firebase:firebase-common:16.0.3] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\2e5f64873eb7e4b250229a46e84e7190\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
 77
 78        <meta-data
-78-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\4e7a3ecdc3999a3ce8e8cbd47ca0cbd8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+78-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\7bcd9b525454ba2760cdaa07fdfd1208\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 79            android:name="com.google.android.gms.version"
-79-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\4e7a3ecdc3999a3ce8e8cbd47ca0cbd8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+79-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\7bcd9b525454ba2760cdaa07fdfd1208\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 80            android:value="@integer/google_play_services_version" />
-80-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\4e7a3ecdc3999a3ce8e8cbd47ca0cbd8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+80-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\titus\.gradle\caches\transforms-2\files-2.1\7bcd9b525454ba2760cdaa07fdfd1208\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 81    </application>
 82
 83</manifest>
