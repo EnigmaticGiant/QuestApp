@@ -40,6 +40,8 @@ public class QuestBase {
     public void add(QuestItem questItem){
         mData.add(questItem);
     }
+    //add a add function that adds to the middle of the list
+
     public void addLog(QuestItem questItem){
         logData.add(0,questItem);
         if(logData.size() > 30){ logData.remove(logData.size()-1);}

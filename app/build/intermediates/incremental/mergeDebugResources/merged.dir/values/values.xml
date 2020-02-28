@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="Colors">
+        <item>Default</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Purple</item>
+    </string-array>
     <attr format="boolean" name="barrierAllowsGoneWidgets"/>
     <attr format="enum" name="barrierDirection">
         <enum name="left" value="0"/>
@@ -656,8 +665,12 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDc44eXHmb_7bZ7TW_AUZe3LWf1NC3_AUA</string>
     <string name="google_storage_bucket" translatable="false">questapp-cs495.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="menu_friends">Friends</string>
     <string name="menu_gallery">Gallery</string>
+    <string name="menu_groups">Groups</string>
     <string name="menu_home">Home</string>
+    <string name="menu_log">Log</string>
+    <string name="menu_request">ReQuest</string>
     <string name="menu_send">Send</string>
     <string name="menu_share">Share</string>
     <string name="menu_slideshow">Slideshow</string>

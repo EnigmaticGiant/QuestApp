@@ -31,8 +31,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, QuestAdapter.OnQuestListener {
@@ -47,7 +51,7 @@ public class MainActivity extends AppCompatActivity
     int RC_SIGN_IN = 0;
     private static final String TAG = "MainActivity";
     public static String userID;
-    public static int toggle = 1;
+    public static int toggle = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +94,9 @@ public class MainActivity extends AppCompatActivity
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, RC_SIGN_IN);
     }
 
     private void updateUI(GoogleSignInAccount account) {
@@ -100,8 +107,7 @@ public class MainActivity extends AppCompatActivity
             Log.d(TAG, "updateUI: ID: "+ mData.getIdentification());
             invalidateOptionsMenu();
             mData.setSignedIn(true);
-            toggle = 0;
-            //updateQuestList(userID);
+            updateQuestList(userID);
         }
         else {
             Log.d(TAG, "updateUI: Login failure.");
@@ -110,6 +116,52 @@ public class MainActivity extends AppCompatActivity
             mData.setSignedIn(false);
             mData.setIdentification(null);
         }
+    }
+
+    private void updateQuestList(String id) {
+        Log.d(TAG, "calling updateQuestList");
+        Query findQuestList = mDatabase.child("questLists").child(id);
+        final int currentQuestSize = mData.getData().size();
+        //Log.d(TAG, "What I'm suppose to be subtracting: " + currentQuestSize);
+        Log.d(TAG, "Outside Toggle switch is " + toggle);
+        int tempSize = mData.getData().size();
+        Log.d(TAG, "tempSize is" + tempSize);
+        //final QuestItem temp;
+        if(toggle == 1) {
+            Log.d(TAG, "toggle is 1, now removing items");
+            while (tempSize > 0) {
+                Log.d(TAG, "Removing the item");
+                //temp = mData.get(i);
+                mData.remove(0);
+                questAdapter.notifyItemRemoved(0);
+                tempSize = mData.getData().size();
+            }
+        }
+        //final QuestBase tempData = QuestBase.getInstance();
+        findQuestList.addListenerForSingleValueEvent(new ValueEventListener() {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                    Log.d(TAG, "Current Snapshot is " + postSnapshot);
+                    Log.d(TAG, "Inside Toggle switch is " + toggle);
+                    String title = postSnapshot.child("title").getValue().toString();
+                    String date = postSnapshot.child("date").getValue().toString();
+                    String content = postSnapshot.child("content").getValue().toString();
+                    String iconString = postSnapshot.child("icon").getValue().toString();
+                    int icon = getBallColor(iconString);
+                    mData.add(new QuestItem(title, content, date, icon));
+
+                }
+                Log.d(TAG, "updating List");
+                questRecyclerView.getAdapter().notifyDataSetChanged();
+                //Log.d(TAG, "Firebase Key: " + dataSnapshot.getKey());
+                toggle = 1;
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
+            }
+        });
     }
 
     public static int getBallColor(String colorString){
@@ -301,10 +353,10 @@ public class MainActivity extends AppCompatActivity
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
             final int position = viewHolder.getAdapterPosition();
             final QuestItem temp;
-
+            temp = mData.get(position);
             switch (direction){
                 case ItemTouchHelper.START:
-                    temp = mData.get(position);
+                    //temp = mData.get(position);
                     mData.remove(position);
                     questAdapter.notifyItemRemoved(position);
                     Snackbar.make(questRecyclerView,"Quest Removed",Snackbar.LENGTH_LONG)
@@ -312,12 +364,14 @@ public class MainActivity extends AppCompatActivity
                         @Override
                         public void onClick(View view) {
                             mData.add(temp);
-                            questAdapter.notifyItemInserted(position);
+                            //questAdapter.notifyItemInserted(position);
+                            questAdapter.notifyDataSetChanged();
+                            //updateQuestList(userID);
                         }
                     }).show();
                     break;
                 case ItemTouchHelper.END:
-                    temp = mData.get(position);
+                    //temp = mData.get(position);
                     mData.addLog(temp);
                     mData.remove(position);
                     questAdapter.notifyItemRemoved(position);
