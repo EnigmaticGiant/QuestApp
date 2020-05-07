@@ -176,8 +176,6 @@ public class MainActivity extends AppCompatActivity
                 return R.drawable.ic_ball_yellow;
             case "2131230854":
                 return R.drawable.ic_ball_orange;
-            //case "whatever string purple is":
-            //    return R.drawable.ic_ball_purple;
             default:
                 return R.mipmap.ic_launcher_round;
         }
